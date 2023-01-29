@@ -15,6 +15,6 @@
 ### 安装方法  
 ## tampermonkey
 # 方法1  
-点击<a href="https://github.com/gongdear/forest-resource-monitoring-helper/raw/main/figure-monitoring/tampermonkey-userscript/script.user.js" title="源代码文件">源代码文件</a> https://github.com/gongdear/forest-resource-monitoring-helper/raw/main/figure-monitoring/tampermonkey-userscript/script.user.js 安装
+点击<a href="https://github.com/gongdear/forest-resource-monitoring-helper/raw/main/figure-monitoring/tampermonkey-userscript/script.user.js" title="源代码文件">源代码文件</a>安装
 # 方法2  
-访问<a href="https://greasyfork.org/en/scripts/458995-%E5%9B%BE%E6%96%91%E7%9B%91%E6%B5%8B%E5%8A%A9%E6%89%8B" title="GreasyFork">GreasyFork</a> 安装
+访问<a href="https://greasyfork.org/en/scripts/458995-%E5%9B%BE%E6%96%91%E7%9B%91%E6%B5%8B%E5%8A%A9%E6%89%8B" title="GreasyFork">GreasyFork</a>安装
