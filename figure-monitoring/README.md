@@ -11,3 +11,8 @@
   在打开了网格工具的界面按键盘Ctrl+D快速定位当前格  
 **5. 回退<font color='red'> Ctrl+Z </font>**  
   在打开了网格工具的界面按键盘Ctrl+Z快速回退
+
+### 安装方法  
+## tampermonkey
+# 方法1 点击 https://github.com/gongdear/forest-resource-monitoring-helper/raw/main/figure-monitoring/tampermonkey-userscript/script.user.js 安装
+# 方法2 访问 https://greasyfork.org/en/scripts/458995-%E5%9B%BE%E6%96%91%E7%9B%91%E6%B5%8B%E5%8A%A9%E6%89%8B 安装
