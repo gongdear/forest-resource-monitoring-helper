@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {
-  	"default_title": "按下 Ctrl+Shift+F 显示快捷键说明",
-    "default_popup": "popup.html",
+    "default_title": "按下 Ctrl+Shift+F 显示快捷键说明",
+    "default_popup": "popups/default.html",
     "default_icon": "icons/default.png"
   },
   "content_scripts": [
@@ -14,6 +14,9 @@
       "js": ["scripts/jquery.min.js","scripts/content-script.js"]
     }
   ],
+  "background": {
+    "service_worker": "scripts/service-worker.js"
+  },
   "commands": {
     "_execute_action": {
       "suggested_key": {

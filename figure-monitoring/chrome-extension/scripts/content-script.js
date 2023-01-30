@@ -1,8 +1,11 @@
 // 监听键盘快捷键
 window.onkeydown = function (event) {
     if($('.zs-grid-tool').length === 0){
-            console.log('没有开启网格工具!');
+        console.log('没有开启网格工具!');
     } else {
+        chrome.runtime.sendMessage({greet:'load'}, (response) => {
+            console.log('service:', response);
+        });
         // Ctrl
         if(event.ctrlKey) {
             // Ctrl + S 点击标记完成
