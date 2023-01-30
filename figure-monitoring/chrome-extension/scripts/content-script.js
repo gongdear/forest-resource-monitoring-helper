@@ -1,11 +1,21 @@
-// 监听键盘快捷键
-window.onkeydown = function (event) {
-    if($('.zs-grid-tool').length === 0){
-        console.log('没有开启网格工具!');
-    } else {
+// 判断是否开启了网格工具
+const openedFishnetTool = (fishnet) => {
+    return fishnet.attributes.length > 2;
+};
+// 监听鼠标事件
+window.onmousedown = () => {
+    const fishnet = $('#fishnet_tool')[0];
+    if(openedFishnetTool(fishnet)){
         chrome.runtime.sendMessage({greet:'load'}, (response) => {
             console.log('service:', response);
         });
+    }
+};
+// 监听键盘快捷键
+window.onkeydown = (event) => {
+    if(!$('#fishnet-tool').style()){
+        console.log('没有开启网格工具!');
+    } else {
         // Ctrl
         if(event.ctrlKey) {
             // Ctrl + S 点击标记完成
@@ -52,6 +62,7 @@ window.onkeydown = function (event) {
                 return false;
             }
         }
+        console.log("图斑监测助手加载成功!")
     }
-}
-console.log("图斑监测助手加载成功!")
+};
+
