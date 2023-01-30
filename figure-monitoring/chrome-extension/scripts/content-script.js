@@ -1,19 +1,27 @@
 // 判断是否开启了网格工具
-const openedFishnetTool = (fishnet) => {
-    return fishnet.attributes.length > 2;
+const fishnetToolIsActive = () => {
+    const fishnet = $('#fishnet_tool')[0];
+    if (!fishnet) {
+        return false;
+    }
+    const fishnetStyleMap = fishnet.attributeStyleMap;
+    if (fishnetStyleMap.size === 0) {
+        return false;
+    }
+    return fishnetStyleMap.get('display').value !== 'none';
+
 };
 // 监听鼠标事件
-window.onmousedown = () => {
-    const fishnet = $('#fishnet_tool')[0];
-    if(openedFishnetTool(fishnet)){
-        chrome.runtime.sendMessage({greet:'load'}, (response) => {
-            console.log('service:', response);
-        });
+window.onmousemove = () => {
+    if(fishnetToolIsActive()){
+        chrome.runtime.sendMessage({greet:'active'});
+    }else {
+        chrome.runtime.sendMessage({greet:'disable'});
     }
 };
 // 监听键盘快捷键
 window.onkeydown = (event) => {
-    if(!$('#fishnet-tool').style()){
+    if(!fishnetToolIsActive()){
         console.log('没有开启网格工具!');
     } else {
         // Ctrl
@@ -62,7 +70,6 @@ window.onkeydown = (event) => {
                 return false;
             }
         }
-        console.log("图斑监测助手加载成功!")
     }
 };
 

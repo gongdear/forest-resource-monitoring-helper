@@ -11,21 +11,20 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         chrome.action.setPopup({
             popup: chrome.runtime.getURL(`popups/disable.html`),
         });
-    } else {
-        console.log(tab);
     }
 });
 chrome.runtime.onMessage.addListener(function (request, sender, callback) {
+    const status = request.greet;
     chrome.action.setIcon({
         path: {
-            '16': chrome.runtime.getURL(`icons/active.png`),
-            '32': chrome.runtime.getURL(`icons/active.png`),
-            '48': chrome.runtime.getURL(`icons/active.png`),
-            '128': chrome.runtime.getURL(`icons/active.png`),
+            '16': chrome.runtime.getURL(`icons/${status}.png`),
+            '32': chrome.runtime.getURL(`icons/${status}.png`),
+            '48': chrome.runtime.getURL(`icons/${status}.png`),
+            '128': chrome.runtime.getURL(`icons/${status}.png`),
         },
     });
     chrome.action.setPopup({
-        popup: chrome.runtime.getURL(`popups/active.html`),
+        popup: chrome.runtime.getURL(`popups/${status}.html`),
     });
     callback('load success!');
     return true;
