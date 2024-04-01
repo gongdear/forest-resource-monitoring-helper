@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         图斑监测助手
 // @namespace    https://gongdear.com/
-// @version      0.1.9
+// @version      0.2.0
 // @description  林草湿图斑监测判读小助手
 // @author       GongDear
 // @license      GPLv3.0
