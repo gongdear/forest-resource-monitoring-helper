@@ -7,7 +7,7 @@
 // @license      GPLv3.0
 // @homepage     https://gongdear.com/
 // @supportURL   https://github.com/gongdear/forest-resource-monitoring-helper
-// @match        http://www.stgz.org.cn/yjjc/*
+// @match        http://www.stgz.org.cn/yjjc*
 // @require      https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC/0lEQVRYhcWXXWjPURjHP1sbajN/yVu0G1LLlDUjYkZcoOzKzebGS3ZBSZIbCSXk5WKlaVKiEGHKS4nMorSN1FyI5mXI28W8rNjCdOp71um38/v9ji1869c5/+c853m+5/k/5znn8L+RZfwXXiqM0igHjgAfgVfAO+CN2vvAEw/vncD2iOwRUAL88K2zo7KDHI98InAOGAMUecabgVke+XKPrBhYq8V4kR0RDgHOynkcZsqwRRlwF5geo78LGBFKoBaYneDc4iIwWv25wJwE3QwwPoTAaqAmwLnBZGCx+p0punuAxyEE9gY6t/is9lOCThuwO8mIm4QmuZYFOO5UYl1xnBwAChTu4eqbdg3QE0qgMZDASeCC87sd2BIwL5XAzcA5XR7ZBqBS/S/AT6AF2P8nBB4Ck4DjwLyEOeM8siXAoohshbamKWR3gMvALWAHcNsquUnYCzwDhqaQ9u2WshjdKmCrE50K/dWGyPwoAQuz+o0qu3Ew9WKhxrKUiEkYqbEFWr0l0o9Ajqphrcrw8xijRue86oGJ3ErgQwKBjNpGOe+DJWAMrtMhc0wys7/vpRi9BgwD3gKHAyLQDzYJn5pDUeGpc5TiImCRB3SrXzIYAvY8roiMt6cQuKG/IDtl52TiBnxJ6OKESumvmPHraqcCoxLsfBsoAXOR2Abs84z1KgJ4IhdFXdxAGgELXz1vc7Zqecrco4MlkOeR2fBn2aISgzPA+79BwIa/yLmc+BAbfgPfndCHgojsO9Ckvm/1L3W8N6XUkmACp4AXwARgrG7INrOLVZBa9DWnVMUBEbiqz4f1oc58CMkBc0PepPdAi0p2/mCcuoiLQC6wFFilNtcZmwEc1N9SL2IhMAup1sHVh2gEpgGHgNdAg87xbu3jMn310jWRaNUXF5Vc2WiQTWN7imOv72nW65n8QM7MSr9GxvJ12TCOSyXrcqLSo+hVO4+cfvbM0yxKwBg5LcXWwNCWikiVJwqJ9ty3YdJq02BywFzRNjtRMQsbqL1/COA3USmm094DingAAAAASUVORK5CYII=
 // @grant        none

@@ -1,7 +1,7 @@
 {
   "name": "图斑监测助手",
   "description": "林草湿图斑监测判读小助手",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "action": {
     "default_title": "按下 Ctrl+Shift+F 显示快捷键说明",
@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://www.stgz.org.cn/yjjc/*"],
+      "matches": ["http://www.stgz.org.cn/yjjc*"],
       "js": ["scripts/jquery.min.js","scripts/content-script.js"]
     }
   ],
